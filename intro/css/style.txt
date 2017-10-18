@@ -1,0 +1,27 @@
+<?php 
+include("config.php"); 
+if(isset($_POST['UserName']) && isset($_POST['PassWord'])){
+	$UserName=$_POST['UserName'];
+	$UserPass=$_POST['PassWord'];
+	
+	$UserPass=md5($UserPass);
+	$sql ="SELECT * from getdata";
+	$sql ="SELECT * FROM user_account WHERE user_name = '$UserName' AND user_pass = '$UserPass'";
+	//$sql="INSERT INTO user_account SET user_name = '$UserName', user_pass = '$UserPass'";
+	
+	$result = $conn->query($sql);
+
+	if ($result->num_rows > 0) {
+		echo "SUCCESS";
+	}
+else{
+		echo 'FAILED';
+	}
+	$conn->close();
+	
+	
+}
+
+
+
+?>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Kitchenware</title>
+ <link rel="icon" href="image/logo.png">
+ <link rel="icon" href="images/logo.png">
+</head>
+<body>
+
+<link rel="stylesheet" href="style.css">
+<ul>
+  <li><img <a style="margin-top:20px;" src="image/nad.png" width="200" height="100"></a></li>
+  <li><a style="margin-left: 100px;" class="active" href="index.html">Home</a></li>
+  <li><a style="margin-left: 50px;" href="product.html">Product</a></li>
+  <li><a style="margin-left: 50px;" href="aboutus.html">About Us</a></li>
+</ul>
+
+<div class="center2">
+  <img class="mySlides" src="image/1.jpg" style="width:1000px; height:300px; border:5px solid black;">
+  <img class="mySlides" src="image/2.jpg" style="width:1000px; height:300px;border:5px solid black;">
+  <img class="mySlides" src="image/10.jpg" style="width:1000px; height:300px;border:5px solid black;">
+    <br>
+  <button  onclick="plusDivs(-1)">&#10094;</button>
+   <a style=margin-left:900px;"> </a> 
+  
+   <button  onclick="plusDivs(1)">&#10095;</button>
+</div>
+<br>
+<br>
+<div class="center">
+         <div class="productrow">
+                <div class="product1">
+                 <a target="_blank" href="image/1.jpg" alt="nadcon" width="200" height="200">
+	             <img src="image/1.jpg" style="width:150px; height: 150px; cursor:pointer"  alt="nadcon" width="200" height="200"
+				 onclick="onClick(this)" class="w3-hover-opacity"> 
+                 </a>		
+				<h3>Gas Stove</h3> 
+                </div>
+        </div>
+
+         <div class="productrow">
+                <div class="product1">
+                 <a target="_blank" href="image/2.jpg" alt="nadcon" width="200" height="200">
+	             <img src="image/2.jpg" style="width:150px; height: 150px; cursor:pointer"  alt="nadcon" width="200" height="200"
+				 onclick="onClick(this)" class="w3-hover-opacity"> 
+                 </a>		
+					<h3>Stove</h3>
+                </div>
+        </div>
+		<div class="productrow">
+                <div class="product1">
+                    <a target="_blank" href="image/rice cooker.jpg" alt="nadcon" width="200" height="200">
+	             <img src="image/rice cooker.jpg" style="width:150px; height: 150px; cursor:pointer"  alt="nadcon" width="200" height="200"
+				 onclick="onClick(this)" class="w3-hover-opacity"> 
+                 </a>		
+					<h3>Rice Cooker</h3>
+                </div>
+        </div>
+		<div class="productrow">
+                <div class="product1">
+                 <a target="_blank" href="image/4.jpg" alt="nadcon" width="200" height="200">
+	             <img src="image/4.jpg" style="width:150px; height: 150px; cursor:pointer"  alt="nadcon" width="200" height="200"
+				 onclick="onClick(this)" class="w3-hover-opacity"> 
+                 </a>		
+					<h3>Refrigerator</h3>
+                </div>
+        </div>
+		<div class="productrow">
+                <div class="product1">
+                 <a target="_blank" href="image/5.jpg" alt="nadcon" width="200" height="200">
+	             <img src="image/5.jpg" style="width:150px; height: 150px; cursor:pointer"  alt="nadcon" width="200" height="200"
+				 onclick="onClick(this)" class="w3-hover-opacity"> 
+                 </a>		
+					<h3>Blender</h3>
+                </div>
+        </div>
+    </div>
+<!--
+<div class="Igallery">
+  <a target="_blank" href="image/1.jpg">
+    <img src="image/1.jpg" style="border-radius:100%"  alt="nadcon" width="200" height="200">
+  </a>
+ 
+  <a target="_blank" href="image/2.jpg">
+    <img src="image/2.jpg" style="border-radius:100%"  alt="Jane" width="200" height="200">
+  </a>
+  <a target="_blank" href="image/3.jpg">
+    <img src="image/3.jpg" style="border-radius:100%"  alt="Jane" width="200" height="200">
+  </a>
+<a target="_blank" href="image/4.jpg">
+    <img src="image/4.jpg" style="border-radius:100%"  alt="Jane" width="200" height="200">
+  </a>
+<a target="_blank" href="image/5.jpg">
+    <img src="image/5.jpg" style="border-radius:100%"  alt="Jane" width="200" height="200">
+  </a>
+
+
+</div>
+
+-->
+<div class="column">
+<footer>
+  <marquee direction=right behavior=alternate>
+    <p> Project By: Ronald Concon / Mary Jane Riano</p>
+  </marquee> 
+  
+</footer>
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+</body>
+</html>
